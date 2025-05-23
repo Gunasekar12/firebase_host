@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Firebase Media Player</title>
+  <link rel="stylesheet" href="../css/player.css">
+</head>
+<body>
+  <div class="media-player">
+    <video id="video-player" controls></video>
+    
+    <div class="controls">
+      <button id="prev-btn" title="Previous">⏮</button>
+      <button id="play-pause-btn" title="Play/Pause">⏯</button>
+      <button id="next-btn" title="Next">⏭</button>
+      <button id="fullscreen-btn" title="Fullscreen">⛶</button>
+      <button id="pip-btn" title="Picture-in-Picture">📌</button>
+    </div>
+    
+    <div class="playlist-selector">
+      <select id="playlist-select">
+        <option value="">Select a playlist</option>
+        <option value="flower">Flowers</option>
+        <option value="forest">Forest</option>
+        <option value="iceland">Iceland</option>
+      </select>
+    </div>
+    
+    <div class="playlist-container">
+      <ul id="playlist"></ul>
+    </div>
+  </div>
+  
+  <script src="../js/firebase-config.js"></script>
+  <script src="../js/playlists.js"></script>
+  <script src="../js/player.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
