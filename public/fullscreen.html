@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fullscreen Video</title>
+  <style>
+    body { margin: 0; background: #000; display: flex; align-items: center; justify-content: center; height: 100vh; }
+  </style>
+</head>
+<body>
+<video
+  id="fullscreen-video"
+  controls
+  autoplay
+  style="background:#000;"
+  controlsList="nodownload"
+  title="My Fullscreen Video"
+  oncontextmenu="return false;"
+></video>
+<script src="fullscreen-helper.js">
+  document.getElementById('fullscreen-video').addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
+</script>
+
+</body>
+</html>
+
